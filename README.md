@@ -9,8 +9,12 @@ Los ejercicios son un trabajo en progreso constante. Para contribuir puedes abri
 Escribir una función llamada `contrasenaValida` que reciba un string y retorne `true` si el string es igual a "2Fj(jjbFsuj" o "eoZiugBf&g9". De lo contrario debe retornar `false`.
 
 ```javascript
-// escribe tu respuesta acá
-
+// function contrasenaValida(password){
+if(password==="2Fj(jjbFsuja" || password==="eoZiugBf&g9"}{
+return(true)}
+else{
+return (false)}
+}
 // código de prueba
 console.log(contrasenaValida("2Fj(jjbFsuj")) // true
 console.log(contrasenaValida("eoZiugBf&g9")) // true
@@ -23,8 +27,11 @@ console.log(contrasenaValuda("")) // false
 Escribir una función llamada `calcularImpuestos` que reciba dos argumentos numéricos: `edad` e `ingresos`. Si `edad` es igual o mayor a 18 y los ingresos son iguales o mayores a 1000 debe retornar `ingresos` * 40%. De lo contrario retornar 0.
 
 ```javascript
-// escribe tu respuesta acá
-
+// function calcularImpuesto(edad,ingresos){
+if(edad>=18 && ingresos>=1000){
+  return(ingresos*40/100)}
+else{
+  return(0)}};
 // código de prueba
 console.log(calcularImpuestos(18, 1000)) // 400
 console.log(calcularImpuestos(40, 10000)) // 4000
@@ -46,7 +53,17 @@ Escribir una función llamada `bmi` que reciba dos argumentos: peso y altura, y 
 * "Obeso" si es igual o mayor a 30
 
 ```javascript
-// escribe la función bmi acá
+//function bmi(peso,altura){
+let  masaCorporal=(peso/altura)**2
+if(masaCorporal<18.5){
+  return("Bajo de peso")}
+else if(masaCorporal>=18.5 && masaCorporal<24.9){
+  return("Normal")}
+else if(masaCorporal>=25 && masaCorporal<29.9 ){
+  return("Sobrepeso")}
+else if(masaCorporal>=30){
+  return("Obeso")}
+}
 
 // código de prueba
 console.log(bmi(65, 1.8)) // "Normal"
